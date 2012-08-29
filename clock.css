@@ -1,0 +1,67 @@
+.clock {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	border-radius: 64px;
+	background: #f8f8f8;
+	background: -moz-linear-gradient(top,#ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(47%,#f6f6f6),color-stop(100%,#ededed));
+	background: -o-linear-gradient(top,#ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: -ms-linear-gradient(top,#ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	background: linear-gradient(to bottom,#ffffff 0%,#f6f6f6 47%,#ededed 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ededed',GradientType=0);
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+	box-shadow: 0 2px 0 rgba(0,0,0,.3);
+}
+
+.clock * {
+	position: absolute;
+	-webkit-transform-origin: bottom center;
+	-moz-transform-origin: bottom center;
+	transform-origin: bottom center;
+	-webkit-transition: -webkit-transform .05s ease-in;
+	-moz-transition: -moz-transform .05s ease-in;
+	transition: transform .05s ease-in;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.3);
+	box-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+.clock .hour {
+	z-index: 200;
+	top: 28px;
+	left: 62px;
+	width: 4px;
+	height: 36px;
+	background: black;
+}
+
+.clock .minute {
+	z-index: 201;
+	top: 14px;
+	left: 63px;
+	width: 2px;
+	height: 50px;
+	background: black;
+}
+
+.clock .second {
+	z-index: 202;
+	top: 4px;
+	left: 63px;
+	width: 1px;
+	height: 60px;
+	background: #e00;
+}
+
+.clock .center {
+	z-index: 203;
+	top: 61px;
+	left: 61px;
+	width: 6px;
+	height: 6px;
+	background: #e00;
+	border-radius: 3px;
+}
